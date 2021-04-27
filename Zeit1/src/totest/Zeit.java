@@ -1,5 +1,5 @@
 package totest;
-public class Zeit implements ZeitIF {
+public class Zeit implements ZeitIF {//Hoffe das funktioniert
 	
 	private int minuten;
 	
@@ -16,7 +16,7 @@ public class Zeit implements ZeitIF {
 	}
 	public double getStunde() {
 		if(minuten<1) {
-			throw new IllegalArgumentException("Minuten dürfen beim aufruf dieser Funktion nicht kleiner 1 sein");
+			throw new IllegalArgumentException("Minuten dÃ¼rfen beim aufruf dieser Funktion nicht kleiner 1 sein");
 		}
 		return ((double)minuten)/60;
 	}
@@ -24,7 +24,7 @@ public class Zeit implements ZeitIF {
 	public void addMinuten(int zeit) {
 		int temp=minuten+zeit;
 		if(temp<0) {
-			throw new IllegalArgumentException("ungültiger Wert!");
+			throw new IllegalArgumentException("ungÃ¼ltiger Wert!");
 		}
 		minuten += zeit;
 		
